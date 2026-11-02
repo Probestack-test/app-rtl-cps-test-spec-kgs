@@ -4,7 +4,7 @@ on:
     branches:
       - "feature-hkn"
       - "release"
-  workflow_call: 
+  workflow_dispatch:  
 jobs:
   kong-deploy:
     uses: ForgeCrux/pipeline-template/.github/workflows/kong-v1.yaml@main
