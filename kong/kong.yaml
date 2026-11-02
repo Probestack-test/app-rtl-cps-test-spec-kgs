@@ -48,7 +48,7 @@ plugins:
     protocols:
       - http
       - https
-    config:
+    config: {}
 
 ########################################################
 # UPSTREAMS + TARGETS
