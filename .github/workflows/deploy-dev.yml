@@ -7,7 +7,7 @@ on:
 
 jobs:
   kong-deploy:
-    uses: ForgeCrux/pipeline-template/.github/workflows/kong-konnect.yaml@main
+    uses: ForgeCrux/pipeline-template/.github/workflows/kong-v1.yaml@main
     permissions:
       contents: read
       id-token: write
