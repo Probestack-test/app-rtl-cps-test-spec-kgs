@@ -1,0 +1,155 @@
+{
+  "info": {
+    "name": "test-spec Postman Collection",
+    "description": "SkyPulse — Live weather intelligence MCP server powered by Open-Meteo.\nReal API: https://api.open-meteo.com/v1\nNo API key required. Free forever.\n\nOpenAPI version: 3.0.3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "noauth"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://api.open-meteo.com/v1",
+      "type": "string",
+      "description": "Override with the base URL of the deployed Kong gateway."
+    },
+    {
+      "key": "latitude",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "longitude",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "current_weather",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "hourly",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "daily",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "timezone",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Get weather forecast for any location",
+      "request": {
+        "method": "GET",
+        "description": "Get weather forecast for any location\n\nResponses:\n- 200: Live weather data",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/forecast?latitude={{latitude}}&longitude={{longitude}}&current_weather={{current_weather}}&hourly={{hourly}}&daily={{daily}}&timezone={{timezone}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "forecast"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "{{latitude}}",
+              "disabled": false
+            },
+            {
+              "key": "longitude",
+              "value": "{{longitude}}",
+              "disabled": false
+            },
+            {
+              "key": "current_weather",
+              "value": "{{current_weather}}",
+              "disabled": true
+            },
+            {
+              "key": "hourly",
+              "value": "{{hourly}}",
+              "disabled": true
+            },
+            {
+              "key": "daily",
+              "value": "{{daily}}",
+              "disabled": true
+            },
+            {
+              "key": "timezone",
+              "value": "{{timezone}}",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "200 Live weather data",
+          "originalRequest": {
+            "method": "GET",
+            "description": "Get weather forecast for any location\n\nResponses:\n- 200: Live weather data",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/forecast?latitude={{latitude}}&longitude={{longitude}}&current_weather={{current_weather}}&hourly={{hourly}}&daily={{daily}}&timezone={{timezone}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "forecast"
+              ],
+              "query": [
+                {
+                  "key": "latitude",
+                  "value": "{{latitude}}",
+                  "disabled": false
+                },
+                {
+                  "key": "longitude",
+                  "value": "{{longitude}}",
+                  "disabled": false
+                },
+                {
+                  "key": "current_weather",
+                  "value": "{{current_weather}}",
+                  "disabled": true
+                },
+                {
+                  "key": "hourly",
+                  "value": "{{hourly}}",
+                  "disabled": true
+                },
+                {
+                  "key": "daily",
+                  "value": "{{daily}}",
+                  "disabled": true
+                },
+                {
+                  "key": "timezone",
+                  "value": "{{timezone}}",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "status": "Live weather data",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [],
+          "body": ""
+        }
+      ]
+    }
+  ]
+}
