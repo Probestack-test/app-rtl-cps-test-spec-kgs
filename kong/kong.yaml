@@ -41,7 +41,10 @@ plugins:
     protocols:
       - http
       - https
-    config:
+    config:                    # ← was null; now a real object
+      minute: 60
+      policy: local
+
   - name: key-auth
     service: test-spec
     enabled: true
