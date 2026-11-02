@@ -1,0 +1,7 @@
+{
+  "artifactId": "test-spec",
+  "status": "MOCK_API_UNAVAILABLE",
+  "message": "Request failed with status code 401",
+  "endpointCount": 0,
+  "generatedAt": "2026-11-02T11:47:22.744Z"
+}
