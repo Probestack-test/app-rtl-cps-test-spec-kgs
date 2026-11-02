@@ -1,0 +1,6 @@
+{
+  "artifactId": "test-spec",
+  "status": "TEST_API_UNAVAILABLE",
+  "message": "Request failed with status code 401",
+  "generatedAt": "2026-11-02T11:47:22.728Z"
+}
